@@ -34,3 +34,15 @@ public class Contador_oxigeno{
         }
     }
 }
+
+
+/* ********************************
+Referencias:
+1. Zahumenszki, Carlos(2016). "La atmosfera de la Tierra esta perdiendo oxigeno" 
+https://es.gizmodo.com/la-atmosfera-de-la-tierra-esta-perdiendo-oxigeno-y-los-1786971190
+
+2. D. A. Stolper, M. L. Bender, G. B. Dreyfus, Y. Yan, J. A. Higgins: 
+A Pleistocene ice core record of atmospheric O2 concentrations. Science (2016).
+
+
+*/
