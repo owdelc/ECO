@@ -7,30 +7,24 @@ import java.util.*;
 public class Driver{
 
     public static void main(String[] args){
-      int edif= 0;
-      int lvls= 0;
-	  int oper= 0;
-      Scanner sn = new Scanner(System.in);
-      System.out.println("Bienvenido a nuestro Call Center.");
+    
+      int arboles_plantados= 0;
+      int ano= 0;
+      int opcion= 0;
+      double disminucion_oxigeno= 0;
+      double porcentaje = 0;
+      int menu = 0;
+     
+     Scanner sn = new Scanner(System.in);
+      System.out.println("¡Bienvenido al simulador del planeta Tierra!");
 
-      System.out.println("Ingresa la cantidad de edificios (ingresa el numero entero. 1, 2,3.) que quieres agregar.");
-      edif=sn.nextInt();
+      System.out.println("Por favor selecciona una opcion del menu."); //Aun falta implementar el menu
+      menu=sn.nextInt();
 
-      System.out.println("Ingresa la cantidad de niveles (ingresa el numero entero. 1, 2,3.) que quieres agregar. Agrega al menos 3.");
-      lvls=sn.nextInt();
-	  
-	  System.out.println("Ingresa la cantidad de operadores por nivel (ingresa el numero entero. 1, 2,3.) que quieres agregar.");
-      oper=sn.nextInt();
-      
-	  System.out.println("Edificios: " + edif);
-	  System.out.println("Niveles: " + lvls);
-	  System.out.println("Operadores por nivel: " + oper);
-	  
-	  lvls = lvls-2;
-	  oper = lvls*oper;
-	  
-	  System.out.println("Niveles con operadores: " + lvls);
-	  System.out.println("Total de operadores por edificio: " + oper);
-
+      System.out.println("1. Iniciar simulador");
+      System.out.println("2. Contador de oxigeno");
+      System.out.println("3. Contactos para ayuda del medio ambiente");
+      System.out.println("4. Finalizar la sesion");
+ 
     }
 }
