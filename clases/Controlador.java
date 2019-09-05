@@ -46,18 +46,20 @@ public class Controlador{
                 default:
                     System.out.println("Opcion invalida");
                 break;
-            }  
+            }
 
         }
     }
 
     public void Voluntariado(){
+    System.out.print(contacto);
 
     }
 
     public void Plantacion(){
+      System.out.print(tips);
 
     }
 
-    
+
 }
