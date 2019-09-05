@@ -1,0 +1,36 @@
+//Guia para un menu
+//  https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
+
+//Driver interactivo tomado de un ejercicio previo, falta editar e implementar el menu
+import java.util.*;
+
+public class Driver{
+
+    public static void main(String[] args){
+      int edif= 0;
+      int lvls= 0;
+	  int oper= 0;
+      Scanner sn = new Scanner(System.in);
+      System.out.println("Bienvenido a nuestro Call Center.");
+
+      System.out.println("Ingresa la cantidad de edificios (ingresa el numero entero. 1, 2,3.) que quieres agregar.");
+      edif=sn.nextInt();
+
+      System.out.println("Ingresa la cantidad de niveles (ingresa el numero entero. 1, 2,3.) que quieres agregar. Agrega al menos 3.");
+      lvls=sn.nextInt();
+	  
+	  System.out.println("Ingresa la cantidad de operadores por nivel (ingresa el numero entero. 1, 2,3.) que quieres agregar.");
+      oper=sn.nextInt();
+      
+	  System.out.println("Edificios: " + edif);
+	  System.out.println("Niveles: " + lvls);
+	  System.out.println("Operadores por nivel: " + oper);
+	  
+	  lvls = lvls-2;
+	  oper = lvls*oper;
+	  
+	  System.out.println("Niveles con operadores: " + lvls);
+	  System.out.println("Total de operadores por edificio: " + oper);
+
+    }
+}
