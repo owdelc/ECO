@@ -1,30 +1,27 @@
-//Guia para un menu
-//  https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
+import java.awt.event.*; //Importamos los paquetes necesarios para hacer el menu
+import javax.swing.*;
 
-//Driver interactivo tomado de un ejercicio previo, falta editar e implementar el menu
-import java.util.*;
+class MenuEjemplo {
 
-public class Driver{
+    public static void main(String[] args) {
 
-    public static void main(String[] args){
-    
-      int arboles_plantados= 0;
-      int ano= 0;
-      int opcion= 0;
-      double disminucion_oxigeno= 0;
-      double porcentaje = 0;
-      int menu = 0;
-     
-     Scanner sn = new Scanner(System.in);
-      System.out.println("¡Bienvenido al simulador del planeta Tierra!");
+        Runnable r = new Runnable() { //Inicializamos un pop-up para el menu
+            public void run() {
+                final JButton b = new JButton("Simulacion Planeta Tierra!"); //Se nombra el boton principal, el de seleccion
 
-      System.out.println("Por favor selecciona una opcion del menu."); //Aun falta implementar el menu
-      menu=sn.nextInt();
-
-      System.out.println("1. Iniciar simulador");
-      System.out.println("2. Contador de oxigeno");
-      System.out.println("3. Contactos para ayuda del medio ambiente");
-      System.out.println("4. Finalizar la sesion");
- 
+                final JPopupMenu menu = new JPopupMenu("Menu");
+                menu.add("Iniciar simulador"); //Damos nombre a las opciones
+                menu.add("Contador de Oxigeno");
+                menu.add("Contactos para ayudar al medio ambiente");
+				menu.add("Finalizar sesion");
+                b.addActionListener( new ActionListener() {
+                    public void actionPerformed(ActionEvent ae) {
+                        menu.show(b, b.getWidth()/2, b.getHeight()/2); //El tamaño de la ventana
+                    }
+                } );
+                JOptionPane.showMessageDialog(null,b);
+            }
+        };
+        SwingUtilities.invokeLater(r);
     }
 }
