@@ -13,11 +13,11 @@ public class Contador_oxigeno{
 
             
 
-        return "Para el ano " + anos_trascurridos + " habra disminuido " + df.format(disminucion_oxigeno) + "%.";
+        return "Para el agno " + anos_trascurridos + " habra disminuido " + df.format(disminucion_oxigeno) + "%.";
     }
 
     public void Informacion_oxigeno(){
-        System.out.println("Según estudios realizados recientemente, los cientificos han descubierto que en los últimos 800,000 anos los niveles de oxigeno han decaido un 0.7% y no se sabe cual es la causa de esto");
+        System.out.println("Según estudios realizados recientemente, los cientificos han descubierto que en los últimos 800,000 agnos los niveles de oxigeno han decaido un 0.7% y no se sabe cual es la causa de esto");
         System.out.println("Hay diferentes hipótesis que tratan de explicar esto. Una de ellas (la más apoyada) dice que es debido al cambio climático");
 
     }
