@@ -4,6 +4,8 @@ public class Controlador{
 
     Scanner scan = new Scanner(System.in);
     Contador_oxigeno simulador_oxigeno = new Contador_oxigeno();
+    contacto contacto = new contacto();
+    tips tips = new tips();
 
 
 
