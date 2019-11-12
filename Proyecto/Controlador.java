@@ -46,6 +46,14 @@ public class Controlador{
     public void Tips(){
         tips.Introduccion();
     }
+    
+    public void Paypal(){
+        donacion.redirigir();
+    }
+
+    public void Simulador(){
+        simulador.ejecutar_Simulador();
+    }
 
 
 }
