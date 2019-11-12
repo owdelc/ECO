@@ -87,11 +87,11 @@ public class Driver{
                 break;
 
                 case 4:
-                    
+                    controlador.Paypal();
                 break;
 
                 case 5:
-                    System.out.println("Opcion no disponible");
+                    controlador.Simulador();
                 break;
 
                 case 6:
